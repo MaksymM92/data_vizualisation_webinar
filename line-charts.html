@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Line charts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script>
+  <script type="module" src="charts/chartJs/line.js" defer></script>
+  <script type="module" src="charts/d3/line.js" defer></script>
+  <script type="module" src="charts/ECharts/line.js" defer></script>
+</head>
+<body>
+<header>
+  <span>Line chart comparison</span>
+  <div>
+    <a href="index.html">Pie charts</a>
+    <a href="bar-charts.html">Bar charts</a>
+    <a href="line-charts.html">Line charts</a>
+    <a href="animated-pie-chart.html">D3 animated</a>
+  </div>
+</header>
+<section>
+  <div class="chart-widget">
+    <div class="widget-header">
+      <span>D3.js</span>
+    </div>
+    <div id="d3-line-chart" class="chart" style="padding: 90px"></div>
+  </div>
+  <div class="chart-widget">
+    <div class="widget-header">
+      <span>Chart.js</span>
+    </div>
+    <div class="chart" style="padding: 90px">
+      <canvas id="chartjs-line-chart" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="chart-widget">
+    <div class="widget-header">
+      <span>ECharts</span>
+    </div>
+    <div class="chart" style="padding: 90px">
+      <div id="echart-line-chart"></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
